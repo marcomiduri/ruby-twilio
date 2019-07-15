@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+require "./twilio_sms"
+
+TwilioSms.new.send('+14234033511', 'this is test message')
+
+puts 'sent successfully'
