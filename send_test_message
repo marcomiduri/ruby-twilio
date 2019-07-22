@@ -3,4 +3,6 @@ require "./twilio_sms"
 
 TwilioSms.new.send('+14234033511', 'this is test message')
 
+TwilioSms.new.send_in_batch( 'this is test message sent in batch')
+
 puts 'sent successfully'

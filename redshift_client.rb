@@ -10,7 +10,7 @@ class RedshiftClient
     @conn = PG::Connection.new(settings['host'], settings['port'], options, tty, settings['dbname'], settings['dbuser'], settings['dbpassword'])
   end
 
-  def create_record(from, to, body, created_date)
-    @conn.query("INSERT INTO messages values('#{from}', '#{to}', '#{body}', '#{created_date}')")
+  def create_record(body, created_date)
+    @conn.query("INSERT INTO messages(body, created_date) values('#{body}', '#{created_date}')")
   end
 end

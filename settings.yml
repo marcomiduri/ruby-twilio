@@ -2,6 +2,9 @@ twilio:
   sid: AC9c1e41eeb8219b185de3488b2b9f428d
   secret: bcc2e0aea896d70776c63cebcfd34df9
   sms_service_sid: MG444e19c532db660efb576ab132c28691
+  contact_list:
+    - "+14234033511"
+    - "+12029155873"
 redshift:
   host: redshift-cluster-1.cx30jvblrqze.us-east-2.redshift.amazonaws.com
   port: 5439
